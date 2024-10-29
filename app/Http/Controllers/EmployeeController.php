@@ -11,10 +11,10 @@ class EmployeeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function home()
     {
         $employees = ModelsEmployee::all();
-        return view("pages.home", compact("Employees"));
+        return view("pages.home", compact("employees"));
     }
 
     /**
