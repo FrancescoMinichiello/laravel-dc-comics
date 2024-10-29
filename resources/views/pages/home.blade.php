@@ -20,6 +20,7 @@
                             <th scope="col">Last name</th>
                             <th scope="col">Address</th>
                             <th scope="col">Phone number</th>
+                            <th scope="col">email</th>
                             <th scope="col">Age</th>
                             <th scope="col">Nationality</th>
                             <th scope="col">Driving license</th>
@@ -35,6 +36,7 @@
                                 <td>{{ $employee->last_name }}</td>
                                 <td>{{ $employee->address }}</td>
                                 <td>{{ $employee->phone_number }}</td>
+                                <td>{{ $employee->email }}</td>
                                 <td>{{ $employee->age }}</td>
                                 <td>{{ $employee->nationality }}</td>
                                 <td>{{ $employee->driving_license ? 'YES' : 'NO' }}</td>

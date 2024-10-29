@@ -3,8 +3,8 @@
 @section('main-content')
     <div class="container">
 
-        <form method="" class="container py-4 mt-4 border border-secondary rounded">
-            <h2 class="bg-primary text-white p-3 rounded-3 fw-semibold d-flex justify-content-center">Crea un nuovo
+        <form method="" class="container py-4 mt-1 border border-secondary rounded">
+            <h2 class="bg-primary text-white p-2 rounded-3 fw-semibold d-flex justify-content-center">Crea un nuovo
                 dipendente</h2>
             <div class="form-group">
                 <label class="my-3" for="name">Name</label>
@@ -22,6 +22,10 @@
                 <label class="my-3" for="phone_number">Phone number</label>
                 <input type="number" class="form-control" id="phone_number" placeholder="Insert phone number"
                     name="phone_number">
+            </div>
+            <div class="form-group">
+                <label class="my-3" for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Insert email" name="email">
             </div>
             <div class="form-group">
                 <label class="my-3" for="Age">Age</label>

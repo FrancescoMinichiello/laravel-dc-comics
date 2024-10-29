@@ -20,6 +20,7 @@ class EmployeeSeeder extends Seeder
             $newEmployee->last_name = $faker->lastName();
             $newEmployee->address = $faker->address();
             $newEmployee->phone_number = $faker->randomNumber(9, true);
+            $newEmployee->email = $faker->email();
             $newEmployee->age = $faker->numberBetween(18, 60);
             $newEmployee->nationality = $faker->country();
             $newEmployee->driving_license = $faker->boolean();

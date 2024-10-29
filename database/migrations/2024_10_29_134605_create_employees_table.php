@@ -17,6 +17,7 @@ return new class extends Migration
             $table->char("last_name", 100);
             $table->string("address");
             $table->integer("phone_number");
+            $table->string("email");
             $table->tinyInteger("age");
             $table->string("nationality");
             $table->boolean("driving_license");
