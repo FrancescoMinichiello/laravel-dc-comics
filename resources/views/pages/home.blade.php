@@ -7,7 +7,7 @@
         <div class="row p-4">
             <div class="col d-flex justify-content-between align-items-center">
                 <h3 class="bg-secondary p-3 text-white rounded-2">Lista dipendenti:</h3>
-                <a href="#"><button class="btn btn-success p-4 fw-bold">AGGIUNGI UN DIPENDENTE</button></a>
+                <a href="/create"><button class="btn btn-success p-4 fw-bold">AGGIUNGI UN DIPENDENTE</button></a>
             </div>
         </div>
         <div class="row">
