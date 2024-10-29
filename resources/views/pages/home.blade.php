@@ -38,7 +38,7 @@
                                 <td>{{ $employee->age }}</td>
                                 <td>{{ $employee->nationality }}</td>
                                 <td>{{ $employee->driving_license ? 'YES' : 'NO' }}</td>
-                                <td class="d-flex">
+                                <td>
                                     <a href="#"><button class="bg-warning p-2 rounded-2 fw-bold">Edit</button></a>
                                     <a href="#"><button class="bg-danger p-2 rounded-2 fw-bold">Delete</button></a>
                                 </td>
