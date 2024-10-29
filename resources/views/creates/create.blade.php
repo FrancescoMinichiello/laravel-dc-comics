@@ -25,7 +25,8 @@
             </div>
             <div class="form-group">
                 <label class="my-3" for="Age">Age</label>
-                <input type="number" class="form-control" id="age" placeholder="Insert age" name="age">
+                <input type="number" class="form-control" id="age" placeholder="Insert age" name="age"
+                    min="18">
             </div>
             <div class="form-group">
                 <label class="my-3" for="Nationality">Nationality</label>

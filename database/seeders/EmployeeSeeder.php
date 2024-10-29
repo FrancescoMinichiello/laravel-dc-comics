@@ -14,7 +14,7 @@ class EmployeeSeeder extends Seeder
      */
     public function run(Faker $faker): void
     {
-        for ($i = 0; $i < 20; $i++) {
+        for ($i = 0; $i < 10; $i++) {
             $newEmployee = new Employee();
             $newEmployee->name = $faker->name();
             $newEmployee->last_name = $faker->lastName();
