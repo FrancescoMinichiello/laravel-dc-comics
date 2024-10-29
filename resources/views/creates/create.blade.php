@@ -8,34 +8,37 @@
                 dipendente</h2>
             <div class="form-group">
                 <label class="my-3" for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Insert name" name="name">
+                <input type="text" class="form-control" id="name" placeholder="Insert name" name="name" required>
             </div>
             <div class="form-group">
                 <label class="my-3" for="last_name">Last name</label>
-                <input type="text" class="form-control" id="last_name" placeholder="Insert last name" name="last_name">
+                <input type="text" class="form-control" id="last_name" placeholder="Insert last name" name="last_name"
+                    required>
             </div>
             <div class="form-group">
                 <label class="my-3" for="address">Address</label>
-                <input type="text" class="form-control" id="address" placeholder="Insert address" name="address">
+                <input type="text" class="form-control" id="address" placeholder="Insert address" name="address"
+                    required>
             </div>
             <div class="form-group">
                 <label class="my-3" for="phone_number">Phone number</label>
                 <input type="number" class="form-control" id="phone_number" placeholder="Insert phone number"
-                    name="phone_number">
+                    name="phone_number" required>
             </div>
             <div class="form-group">
                 <label class="my-3" for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Insert email" name="email">
+                <input type="email" class="form-control" id="email" placeholder="Insert email" name="email"
+                    required>
             </div>
             <div class="form-group">
                 <label class="my-3" for="Age">Age</label>
                 <input type="number" class="form-control" id="age" placeholder="Insert age" name="age"
-                    min="18">
+                    min="18" max="60" required>
             </div>
             <div class="form-group">
                 <label class="my-3" for="Nationality">Nationality</label>
                 <input type="text" class="form-control" id="nationality" placeholder="Insert nationality"
-                    name="nationality">
+                    name="nationality" required>
             </div>
             <div class="d-flex gap-4">
                 <label class="my-3" for="phone_number">Driving license?</label>
