@@ -23,7 +23,6 @@
                             <th scope="col">email</th>
                             <th scope="col">Age</th>
                             <th scope="col">Nationality</th>
-                            <th scope="col">Driving license</th>
                             <th scope="col">Actions</th>
 
                         </tr>
@@ -39,7 +38,6 @@
                             <td>{{ $employee->email }}</td>
                             <td>{{ $employee->age }}</td>
                             <td>{{ $employee->nationality }}</td>
-                            <td>{{ $employee->driving_license ? 'YES' : 'NO' }}</td>
                             <td>
                                 <a href="{{ route('employee.show', $employee->id) }}"><button
                                         class="bg-secondary p-2 rounded-2 fw-bold">Show</button></a>

@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    @include('partials.header')
 
     {{-- Inserisci i contenuti da chi estende --}}
     <main>
