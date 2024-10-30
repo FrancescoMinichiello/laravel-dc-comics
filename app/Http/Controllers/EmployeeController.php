@@ -67,7 +67,14 @@ class EmployeeController extends Controller
     public function update(Request $request, string $id)
     {
         $employee = Employee::findOrFail($id);
-        $employee->update();
+        $employee->name = $request->name;
+        $employee->last_name = $request->last_name;
+        $employee->address = $request->address;
+        $employee->phone_number = $request->phone_number;
+        $employee->email = $request->email;
+        $employee->age = $request->age;
+        $employee->nationality = $request->nationality;
+        $employee->save();
         return redirect()->route("employee.show", $employee->id);
     }
 
