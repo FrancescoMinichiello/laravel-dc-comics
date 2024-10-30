@@ -22,7 +22,7 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-        return view("employee.create");
+        return view("employees.create");
     }
 
     /**
@@ -30,7 +30,17 @@ class EmployeeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $employeeData = $request->all();
+        $newEmployee = new Employee();
+        $newEmployee->name = $employeeData["name"];
+        $newEmployee->last_name = $employeeData["last_name"];
+        $newEmployee->address = $employeeData["address"];
+        $newEmployee->phone_number = $employeeData["phone_number"];
+        $newEmployee->email = $employeeData["email"];
+        $newEmployee->age = $employeeData["age"];
+        $newEmployee->nationality = $employeeData["nationality"];
+        $newEmployee->save();
+        return redirect()->route("employee.show", ["id" => $newEmployee->id]);
     }
 
     /**

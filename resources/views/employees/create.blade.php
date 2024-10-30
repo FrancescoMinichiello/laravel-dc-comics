@@ -1,9 +1,10 @@
 @extends('layouts.app')
-
+@section('page-title', 'Create new employee')
 @section('main-content')
     <div class="container">
 
-        <form method="POST" class="container py-4 mt-1 border border-secondary rounded">
+        <form method="POST" action="{{ route('employee.store') }}"
+            class="container py-4 mt-1 border border-secondary rounded">
             @csrf
             <h2 class="bg-primary text-white p-2 rounded-3 fw-semibold d-flex justify-content-center">Crea un nuovo
                 dipendente</h2>
@@ -41,24 +42,25 @@
                 <input type="text" class="form-control" id="nationality" placeholder="Insert nationality"
                     name="nationality" required>
             </div>
-            <div class="d-flex gap-4">
-                <label class="my-3" for="phone_number">Driving license?</label>
+            <!--<div class="d-flex gap-4">
+                    <label class="my-3" for="phone_number">Driving license?</label>
 
-                <div class="form-check my-3">
-                    <input class="form-check-input" type="radio" name="driving_license" id="driving_license_yes"
-                        value="yes" checked>
-                    <label class="form-check-label" for="driving_license_yes">
-                        Yes
-                    </label>
+                    <div class="form-check my-3">
+                        <input class="form-check-input" type="radio" name="driving_license" id="driving_license_yes"
+                            value="yes" checked>
+                        <label class="form-check-label" for="driving_license_yes">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check my-3">
+                        <input class="form-check-input" type="radio" name="driving_license" id="driving_license_no"
+                            value="no" checked>
+                        <label class="form-check-label" for="driving_license_no">
+                            No
+                        </label>
+                    </div>
                 </div>
-                <div class="form-check my-3">
-                    <input class="form-check-input" type="radio" name="driving_license" id="driving_license_no"
-                        value="no" checked>
-                    <label class="form-check-label" for="driving_license_no">
-                        No
-                    </label>
-                </div>
-            </div>
+            -->
             <div class="d-flex justify-content-end">
                 <button class="bg-success p-3 rounded-2 mt-5 fw-bold text-white" type="submit">SALVA NUOVO
                     DIPENDENTE</button>
