@@ -4,12 +4,6 @@
 
 @section('main-content')
     <div class="container-fluid my-5">
-        <div class="row p-4">
-            <div class="col d-flex justify-content-between align-items-center">
-                <h3 class="bg-secondary p-3 text-white rounded-2">Lista dipendenti:</h3>
-                <a href="/employees/create"><button class="btn btn-success p-4 fw-bold">AGGIUNGI UN DIPENDENTE</button></a>
-            </div>
-        </div>
         <div class="row">
             <div class="col">
                 <table class="table table-dark table-striped">
@@ -42,7 +36,13 @@
                                     <a href="{{ route('employee.show', $employee->id) }}"><button
                                             class="bg-secondary p-2 rounded-2 fw-bold">Show</button></a>
                                     <a href="#"><button class="bg-warning p-2 rounded-2 fw-bold">Edit</button></a>
-                                    <a href="#"><button class="bg-danger p-2 rounded-2 fw-bold">Delete</button></a>
+                                    <form class="d-inline" action="{{ route('employee.destroy', $employee->id) }}"
+                                        method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <a href="#"><button
+                                                class="bg-danger p-2 rounded-2 fw-bold">Delete</button></a>
+                                    </form>
                                 </td>
 
                             </tr>
