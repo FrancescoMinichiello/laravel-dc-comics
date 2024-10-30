@@ -1,1 +1,5 @@
 @use "~bootstrap/scss/bootstrap" as *;
+
+button:hover {
+    scale: 1.1;
+}

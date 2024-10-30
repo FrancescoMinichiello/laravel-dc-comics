@@ -5,9 +5,8 @@
 @section('main-content')
     <div class="container-fluid my-5">
         <div class="col d-flex bg-primary align-items-center p-4 justify-content-center text-white rounded-top-5">
-            <h2 class="m-0">Gestionale per i nostri dipendenti |</h2>
-            <h4 class="m-0">Aggiungi un nuovo dipendente, modifica informazioni oppure elimina
-            </h4>
+            <h1 class="m-0">Management for our employees |</h1>
+            <h2 class="m-0 ps-3">Add a new employee, edit information or delete it. </h2>
         </div>
         <div class="row">
             <div class="col">

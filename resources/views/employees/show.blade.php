@@ -37,7 +37,12 @@
                             <td>{{ $employee->nationality }}</td>
                             <td>
                                 <a href="#"><button class="bg-warning p-2 rounded-2 fw-bold">Edit</button></a>
-                                <a href="#"><button class="bg-danger p-2 rounded-2 fw-bold">Delete</button></a>
+                                <form class="d-inline" action="{{ route('employee.destroy', $employee->id) }}"
+                                    method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <a href="#"><button class="bg-danger p-2 rounded-2 fw-bold">Delete</button></a>
+                                </form>
                             </td>
 
                         </tr>
