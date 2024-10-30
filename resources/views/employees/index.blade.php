@@ -39,7 +39,8 @@
                                 <td>
                                     <a href="{{ route('employee.show', $employee->id) }}"><button
                                             class="bg-secondary p-2 rounded-2 fw-bold">Show</button></a>
-                                    <a href="#"><button class="bg-warning p-2 rounded-2 fw-bold">Edit</button></a>
+                                    <a href="{{ route('employee.edit', $employee->id) }}"><button
+                                            class="bg-warning p-2 rounded-2 fw-bold">Edit</button></a>
                                     <form class="d-inline" action="{{ route('employee.destroy', $employee->id) }}"
                                         method="POST">
                                         @csrf

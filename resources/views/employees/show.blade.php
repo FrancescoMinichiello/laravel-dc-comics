@@ -36,7 +36,8 @@
                             <td>{{ $employee->age }}</td>
                             <td>{{ $employee->nationality }}</td>
                             <td>
-                                <a href="#"><button class="bg-warning p-2 rounded-2 fw-bold">Edit</button></a>
+                                <a href="{{ route('employee.edit', $employee->id) }}"><button
+                                        class="bg-warning p-2 rounded-2 fw-bold">Edit</button></a>
                                 <form class="d-inline" action="{{ route('employee.destroy', $employee->id) }}"
                                     method="POST">
                                     @csrf
