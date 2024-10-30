@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [EmployeeController::class, "home"])->name('home');
-Route::get('/create', [CreateEmployeeController::class, "create"])->name('create');
+Route::get('/', [EmployeeController::class, "index"])->name('home');
+Route::get('/employees/{id}', [EmployeeController::class, "show"])->name('employee.show');
+Route::get('/employees/create', [EmployeeController::class, "create"])->name('employee.create');

@@ -3,7 +3,8 @@
 @section('main-content')
     <div class="container">
 
-        <form method="" class="container py-4 mt-1 border border-secondary rounded">
+        <form method="POST" class="container py-4 mt-1 border border-secondary rounded">
+            @csrf
             <h2 class="bg-primary text-white p-2 rounded-3 fw-semibold d-flex justify-content-center">Crea un nuovo
                 dipendente</h2>
             <div class="form-group">

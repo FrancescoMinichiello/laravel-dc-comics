@@ -11,10 +11,10 @@ class EmployeeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function home()
+    public function index()
     {
         $employees = ModelsEmployee::all();
-        return view("pages.home", compact("employees"));
+        return view("employees.index", compact("employees"));
     }
 
     /**
@@ -22,7 +22,7 @@ class EmployeeController extends Controller
      */
     public function create()
     {
-        //
+        return view("employee.create");
     }
 
     /**
@@ -36,9 +36,10 @@ class EmployeeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(employee $employee)
+    public function show(string $id)
     {
-        //
+        $employee = ModelsEmployee::findOrFail($id);
+        return view("employees.show", compact("employee"));
     }
 
     /**
