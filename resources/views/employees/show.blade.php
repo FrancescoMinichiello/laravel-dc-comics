@@ -4,11 +4,8 @@
 
 @section('main-content')
     <div class="container-fluid my-5">
-        <div class="row p-4">
-            <div class="col d-flex justify-content-between align-items-center">
-                <h3 class="bg-secondary p-3 text-white rounded-2">Lista dipendenti:</h3>
-                <a href="/employees/create"><button class="btn btn-success p-4 fw-bold">AGGIUNGI UN DIPENDENTE</button></a>
-            </div>
+        <div class="col d-flex bg-primary align-items-center p-4 justify-content-center text-white rounded-top-5">
+            <h2 class="m-0">Informazioni su:</h2>
         </div>
         <div class="row">
             <div class="col">
@@ -39,8 +36,6 @@
                             <td>{{ $employee->age }}</td>
                             <td>{{ $employee->nationality }}</td>
                             <td>
-                                <a href="{{ route('employee.show', $employee->id) }}"><button
-                                        class="bg-secondary p-2 rounded-2 fw-bold">Show</button></a>
                                 <a href="#"><button class="bg-warning p-2 rounded-2 fw-bold">Edit</button></a>
                                 <a href="#"><button class="bg-danger p-2 rounded-2 fw-bold">Delete</button></a>
                             </td>

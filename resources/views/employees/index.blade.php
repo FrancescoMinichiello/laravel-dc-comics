@@ -4,6 +4,11 @@
 
 @section('main-content')
     <div class="container-fluid my-5">
+        <div class="col d-flex bg-primary align-items-center p-4 justify-content-center text-white rounded-top-5">
+            <h2 class="m-0">Gestionale per i nostri dipendenti |</h2>
+            <h4 class="m-0">Aggiungi un nuovo dipendente, modifica informazioni oppure elimina
+            </h4>
+        </div>
         <div class="row">
             <div class="col">
                 <table class="table table-dark table-striped">
