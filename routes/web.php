@@ -20,6 +20,6 @@ Route::get('/', [EmployeeController::class, "index"])->name('index');
 Route::get('/employees/create', [EmployeeController::class, "create"])->name('employee.create');
 Route::get('/employees/{id}', [EmployeeController::class, "show"])->name('employee.show');
 Route::post('/employees', [EmployeeController::class, "store"])->name('employee.store');
-route::get('/employees/{id}/edit', [EmployeeController::class, "edit"])->name('employee.edit');
-route::put('/employees/{id}', [EmployeeController::class, "update"])->name("employee.update");
+route::get('/employees/{employee}/edit', [EmployeeController::class, "edit"])->name('employee.edit');
+route::put('/employees/{employee}', [EmployeeController::class, "update"])->name("employee.update");
 Route::delete('/employees/{employee}', [EmployeeController::class, 'destroy'])->name('employee.destroy');

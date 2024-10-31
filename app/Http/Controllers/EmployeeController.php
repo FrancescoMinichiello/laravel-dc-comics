@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\employee;
 use App\Models\Employee as ModelsEmployee;
+use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
@@ -55,18 +56,16 @@ class EmployeeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(employee $employee)
     {
-        $employee = Employee::findOrFail($id);
         return view("employees.edit", compact("employee"));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, employee $employee)
     {
-        $employee = Employee::findOrFail($id);
         $employee->name = $request->name;
         $employee->last_name = $request->last_name;
         $employee->address = $request->address;
@@ -74,7 +73,7 @@ class EmployeeController extends Controller
         $employee->email = $request->email;
         $employee->age = $request->age;
         $employee->nationality = $request->nationality;
-        $employee->save();
+        $employee->update();
         return redirect()->route("employee.show", $employee->id);
     }
 
